@@ -1,0 +1,151 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    gap: 40px;
+}
+
+.form{
+    /* From https://css.glass */
+     background: rgba( 81, 128, 209, 0.4 );
+    padding: 30px; 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.email{
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+
+}
+.password{
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+
+}
+.name{
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+
+}
+
+
+.input{
+    padding: 12px;
+    width: 20rem;
+    border: none;
+    color: white;
+    
+    /* From https://css.glass */
+    background:rgba(35, 94, 166, 0.997);
+   
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border-radius: 20px;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+   
+
+}
+
+.title{
+    font-size: 80px;
+    font-family: 'Archivo Black', sans-serif;
+    background-image:linear-gradient(
+        45deg,
+        hsl(235, 57%, 51%) 0%,
+        hsl(249, 100%, 21%) 11%,
+        hsl(244, 61%, 41%) 22%,
+        hsl(242, 77%, 22%) 33%,
+        hsl(240, 69%, 39%) 44%,
+        hsl(207deg 100% 40%) 56%,
+        hsl(212deg 100% 46%) 67%,
+        hsl(216deg 100% 48%) 78%,
+        hsl(221deg 100% 47%) 89%,
+        hsl(278deg 82% 47%) 100%
+      );
+    -webkit-background-clip: text; /* For webkit browsers (Chrome, Safari) */
+    background-clip: text;
+    color: transparent; /* Hide the original text */
+    margin-right: 90px;
+}
+
+
+.button{
+    background: rgba( 81, 128, 209, 0.4 );
+    
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: none ;
+    padding: 7px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s;
+  
+}
+
+
+.button:hover{
+    background: rgba(6, 51, 128, 0.4);
+}
+
+
+.login{
+    margin-top: 20px;
+    color: black;
+    font-size: 1rem;
+}
+
+.linkLogin{
+    border-bottom: 2px solid rgb(0, 0, 0);
+   
+}
+
+
+.loginTItle{
+    margin-bottom: 10px;
+    color: black;
+}
+
+
+.logo{
+    position: absolute;
+    bottom: 150px;
+    left: 65px;
+  
+
+
+}

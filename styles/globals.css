@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lobster&family=Montserrat&family=Noto+Sans:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@500&family=Russo+One&family=Unica+One&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+ 
+ 
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,52 @@
+.pop{
+    position: absolute;
+    width: 300px;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+    background-color: #F2EAD3;
+    right: 1%;
+    bottom: 2%;
+    padding: 10px;
+    font-weight: bolder;
+    animation-name: myAnimation;
+    animation-duration: .6s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    
+}
+
+.span{
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+
+.linkbtn{
+cursor: pointer;
+margin-left: 5px;
+border-bottom: 1px solid black;
+transition: all .4s;
+font-weight: bold;
+}
+
+.linkbtn:hover{
+    color: #512B81;
+    font-size: 1.1rem;
+}
+
+
+@keyframes myAnimation {
+    0% {
+      opacity: 0;
+    }
+    /* 50% {
+        opacity: 0.5;
+    } */
+    100% {
+        opacity: 1;
+    }
+  }
+
+

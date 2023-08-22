@@ -1,0 +1,43 @@
+.pop{
+    position: absolute;
+    width: auto;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+    background-color: #512B81;
+    left: 16%;
+    top: 3%;
+    padding: 10px;
+    animation: upDown 3s infinite .4s ;
+    font-weight: bolder;
+    
+}
+
+.span{
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.noAnimation{
+    position: absolute;
+    width: 300px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+    background-color: #9a6dd2;
+    left: 16%;
+    top: 3%;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+
+
+@keyframes upDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }

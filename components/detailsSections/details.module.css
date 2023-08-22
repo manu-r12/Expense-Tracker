@@ -1,0 +1,235 @@
+
+
+.container{
+color: rgb(0, 0, 0);
+font-family: 'Roboto', sans-serif;
+width: 90em;
+height: 80vh;
+display: flex;
+align-items: center;
+padding: 10px;
+gap: 20px;
+
+
+
+}
+
+
+
+.graph{
+    padding: 20px;
+    width: 800px;
+    height: 490px;
+    background: rgba(10, 143, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+}
+
+
+.graphAndDetails{
+  
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   
+}
+
+
+
+.detailsBox{
+    padding: 20px;
+    margin: 10px;
+    width: 190px;
+    background: rgba(10, 143, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(252, 254, 255, 0.033); 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  
+    
+}
+
+.details{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.addBtn{
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.addBtn:hover{
+    color: rgb(197, 179, 208);
+   
+}
+
+.userMenu{
+    
+    padding: 10px;
+    margin-right: 10px;
+    width: 310px;
+    height: 490px;
+    background: rgba(10, 143, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    display: flex;
+    justify-content: center;
+    color: black;
+    
+
+}
+
+
+
+.UserInfo{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     gap: 30px;
+}
+
+.p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.btn{
+    background: rgba( 81, 128, 209, 0.4 );
+    
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: none ;
+    padding: 7px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s;
+  
+}
+
+
+.btn:hover{
+    background: rgba(6, 51, 128, 0.4);
+}
+
+
+.black{
+   z-index: 3; 
+   height: 100vh;
+   width: 100%;
+   margin: 0;
+   left: 0;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.7); 
+   position: absolute;
+   animation-name: myAnimation;
+   animation-duration: .4s;
+   animation-delay: .1s;
+   animation-fill-mode: both;
+   animation-play-state: running;
+}
+
+
+@keyframes myAnimation {
+    0% {
+      opacity: 0;
+    }
+    /* 50% {
+        opacity: 0.5;
+    } */
+    100% {
+        opacity: 1;
+    }
+  }
+
+.h1
+{
+    /* border-bottom: 1.8px solid  #512B81;
+    border-left-width: 100px; */
+    margin-top: 20px;
+    margin-left: 65rem;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    background-image:linear-gradient(
+        45deg,
+        hsl(235, 57%, 51%) 0%,
+        hsl(249, 100%, 21%) 11%,
+        hsl(244, 61%, 41%) 22%,
+        hsl(242, 77%, 22%) 33%,
+        hsl(240, 69%, 39%) 44%,
+        hsl(207deg 100% 40%) 56%,
+        hsl(212deg 100% 46%) 67%,
+        hsl(216deg 100% 48%) 78%,
+        hsl(221deg 100% 47%) 89%,
+        hsl(278deg 82% 47%) 100%
+      );
+    -webkit-background-clip: text; /* For webkit browsers (Chrome, Safari) */
+    background-clip: text;
+    color: transparent; /* Hide the original text */
+
+}
+
+
+
+.prevDataSection{
+
+    width: 450px;
+    height: 490px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: rgba(10, 143, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(252, 254, 255, 0.033); 
+    overflow-y: scroll;
+}
+
+.prevtitle{
+    text-align: center;
+    margin-bottom: 20px;
+} 
+
+
+.prevDataList{
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

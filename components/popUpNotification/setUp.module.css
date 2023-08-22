@@ -1,0 +1,141 @@
+.PopUp{
+    color: black;
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+    background-color: rgb(97, 75, 149);
+    border-radius: 10px;
+    animation-name: myAnimation;
+    animation-duration: .6s;
+    animation-delay: .1s;
+    animation-fill-mode: both;
+    animation-play-state: running;
+
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.closeBtn{
+    cursor: pointer;
+    color: black;
+    transition: all .2s;
+    
+}
+.closeBtn:hover{
+    color: rgb(97, 75, 149);
+    transform: scale(1.1);
+}
+
+.input{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detailsInput{
+    width: 60%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(177, 158, 230);
+    border-radius: 10px;
+    outline: none;
+    transition: all .5s;
+}
+.detailsInput:focus{
+    transform: scale(1.01);
+}
+
+
+
+.setBtn{
+    background: rgba( 81, 128, 209, 0.4 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: none ;
+    padding: 10px;
+    width: 90px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.inputAndBtn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.setBtn:hover{
+    background: rgba(6, 51, 128, 0.4);
+}
+
+
+.addTitle{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    background-image:linear-gradient(
+        45deg,
+        hsl(235, 57%, 51%) 0%,
+        hsl(249, 100%, 21%) 11%,
+        hsl(244, 61%, 41%) 22%,
+        hsl(242, 77%, 22%) 33%,
+        hsl(240, 69%, 39%) 44%,
+        hsl(207deg 100% 40%) 56%,
+        hsl(212deg 100% 46%) 67%,
+        hsl(216deg 100% 48%) 78%,
+        hsl(221deg 100% 47%) 89%,
+        hsl(278deg 82% 47%) 100%
+      );
+    -webkit-background-clip: text; /* For webkit browsers (Chrome, Safari) */
+    background-clip: text;
+    color: transparent; /* Hide the original text */
+}
+
+@keyframes myAnimation {
+    0% {
+      opacity: 0;
+    }
+    /* 50% {
+        opacity: 0.5;
+    } */
+    100% {
+        opacity: 1;
+    }
+  }
+
+
+.uploadBtn{
+  position: absolute;
+  bottom: 10%;
+  right: 35%;
+ 
+  
+  }
+
+
+.black{
+    z-index: 3; 
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    position: absolute;
+    animation-name: myAnimation;
+    animation-duration: .4s;
+    animation-delay: .1s;
+    animation-fill-mode: both;
+    animation-play-state: running;
+ }

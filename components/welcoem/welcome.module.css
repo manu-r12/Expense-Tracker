@@ -1,0 +1,130 @@
+
+
+
+
+
+
+.container{
+    margin-top: 100px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.welcomeScreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.welcomeTitle{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    background-image:linear-gradient(
+        45deg,
+        hsl(235, 57%, 51%) 0%,
+        hsl(249, 100%, 21%) 11%,
+        hsl(244, 61%, 41%) 22%,
+        hsl(242, 77%, 22%) 33%,
+        hsl(240, 69%, 39%) 44%,
+        hsl(207deg 100% 40%) 56%,
+        hsl(212deg 100% 46%) 67%,
+        hsl(216deg 100% 48%) 78%,
+        hsl(221deg 100% 47%) 89%,
+        hsl(278deg 82% 47%) 100%
+      );
+    -webkit-background-clip: text; /* For webkit browsers (Chrome, Safari) */
+    background-clip: text;
+    color: transparent; /* Hide the original text */
+    
+}
+
+
+
+
+
+.button {
+   font-family: 'Montserrat', sans-serif;  
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 55px;
+    padding: 15px 10px;
+    margin-left: 16px;
+    transform: translateZ(0);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px -1px #0000001a;
+    transition: all .4s;
+  }
+
+  .button:hover::before{
+    background: linear-gradient(
+      45deg,
+      hsl(235, 57%, 51%) 0%,
+      hsl(249, 100%, 21%) 11%,
+      hsl(244, 61%, 41%) 22%,
+      hsl(242, 77%, 22%) 33%,
+      hsl(240, 69%, 39%) 44%,
+      hsl(240, 50%, 25%) 44%,
+      hsl(240, 69%, 39%) 44%,
+      hsl(207deg 100% 40%) 56%,
+      hsl(212deg 100% 46%) 67%,
+      hsl(216deg 100% 48%) 70%,
+      hsl(221deg 100% 47%) 81%,
+      hsl(278deg 82% 47%) 100%
+    );
+  }
+
+  
+  
+  .button::before,
+  .button::after {
+   
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all .4s;
+  }
+  
+  /* Conic Gradient Animation */
+  .button::before {
+    animation: 11s rotate linear infinite;
+    width: 400%;
+    height: 400%;
+    background: var(--tile-border);
+    transition: all .4s;
+  }
+  
+  /* Inner Square */
+  .button::after {
+    inset: 0;
+    padding: 1px;
+    border-radius: var(--border-radius);
+    background: linear-gradient(
+      to bottom right,
+      rgba(var(--tile-start-rgb), 1),
+      rgba(var(--tile-end-rgb), 1)
+    );
+    background-clip: content-box;
+    transition: all .4s;
+  }
+  
+  
+  /* Enable hover only on non-touch devices */
+  
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
